@@ -1,0 +1,383 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #302d3d;
+    background-color: white;
+}
+
+
+.header {
+    min-height: 65px;
+    padding: 12px 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #55515d;
+    font-size: 10px;
+}
+
+.menu .plan {
+    border: 1px solid #302d3d;
+    padding: 10px 16px;
+}
+
+.hamburger {
+    display: none;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.intro {
+    background-color: #30283f;
+    color: white;
+    padding: 50px 12%;
+    min-height: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+}
+
+.intro-content {
+    width: 48%;
+    max-width: 400px;
+}
+
+.intro h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #e0dce6;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.family-img {
+    width: 46%;
+    max-width: 400px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.different {
+    padding: 120px 12% 65px;
+}
+
+.different h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.service {
+    flex: 1;
+    min-width: 0;
+}
+
+.service img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.service p {
+    color: #817d87;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.work {
+    margin: 0 12% 75px;
+    min-height: 140px;
+    padding: 30px 40px;
+    background-color: #30283f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.work .button {
+    flex-shrink: 0;
+}
+
+.footer {
+    background-color: #fafafa;
+    padding: 35px 12% 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e6e3e8;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.link-group h4 {
+    color: #817b89;
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.link-group a {
+    color: #302d3d;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    .header {
+        padding: 12px 7%;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .intro {
+        padding: 40px 7%;
+        gap: 25px;
+        min-height: 300px;
+    }
+
+    .intro h1 {
+        font-size: 32px;
+    }
+
+    .family-img {
+        width: 48%;
+        height: 270px;
+    }
+
+    .different {
+        padding: 90px 7% 50px;
+    }
+
+    .different h2 {
+        font-size: 32px;
+    }
+
+    .services {
+        gap: 20px;
+    }
+
+    .work {
+        margin: 0 7% 55px;
+        padding: 25px;
+    }
+
+    .work h2 {
+        font-size: 24px;
+    }
+
+    .footer {
+        padding: 30px 7% 40px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .header {
+        min-height: 55px;
+        padding: 12px 20px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .intro {
+        padding: 0 0 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .family-img {
+        order: -1;
+        width: 100%;
+        max-width: none;
+        height: 240px;
+    }
+
+    .intro-content {
+        width: 100%;
+        padding: 35px 22px 0;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 11px;
+    }
+
+    .different {
+        padding: 60px 22px 50px;
+        text-align: center;
+    }
+
+    .different h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .service img {
+        margin: 0 auto 18px;
+    }
+
+    .service h3 {
+        font-size: 18px;
+    }
+
+    .service p {
+        max-width: 260px;
+        margin: auto;
+    }
+
+    .work {
+        margin: 0 20px 50px;
+        padding: 35px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .work h2 {
+        font-size: 26px;
+    }
+
+    .footer {
+        padding: 35px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 22px;
+        padding-bottom: 25px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+        padding-top: 30px;
+    }
+
+    .link-group {
+        gap: 15px;
+    }
+}
+
